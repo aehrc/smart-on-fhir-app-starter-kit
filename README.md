@@ -5,19 +5,15 @@ This starter-kit application is a simple SMART on FHIR App.
 * Displays Patient information using FHIR Visualizer
 * Allows User to Modify Patient information
 
-# Demo
-![a gif showing the SMART app in action](https://github.com/SameerDoshi/SameerDoshi.github.io/blob/master/images/SMART-FHIR-Demo.gif?raw=true)
-
-
-
 
 # Running this app locally (quick)
-1. ``` yarn install ```
-2. ``` yarn start ```
-3. [Goto SMART Launcher](https://launch.smarthealthit.org/)
-4. Leave everything as default, at the bottom of the form change the launch url to 
-```http://localhost:3000```
-5. Click Launch
+1. ``` npm install ```
+2. ``` npm run dev ```
+3. [Goto SMART Forms EHR](https://ehr.smartforms.io/settings/app-launch?fhir_version=r4&launch_url=https%3A%2F%2Flocalhost%3A3000&app_name=Starter+SMART+App&tab=0&launch=WzAsImphbWVzLWRlbW8iLCJwcmltYXJ5LXBldGVyIiwiIiwwLDAsMCwibGF1bmNoIG9wZW5pZCBmaGlyVXNlciBvbmxpbmVfYWNjZXNzIHBhdGllbnQvQWxsZXJneUludG9sZXJhbmNlLmNzIHBhdGllbnQvQ29uZGl0aW9uLmNzIHBhdGllbnQvRW5jb3VudGVyLnIgcGF0aWVudC9JbW11bml6YXRpb24uY3MgcGF0aWVudC9NZWRpY2F0aW9uLnIgcGF0aWVudC9NZWRpY2F0aW9uU3RhdGVtZW50LmNzIHBhdGllbnQvT2JzZXJ2YXRpb24uY3MgcGF0aWVudC9QYXRpZW50LnIgcGF0aWVudC9RdWVzdGlvbm5haXJlUmVzcG9uc2UuY3J1cyB1c2VyL1ByYWN0aXRpb25lci5yIGxhdW5jaC9xdWVzdGlvbm5haXJlP3JvbGU9aHR0cDovL25zLmVsZWN0cm9uaWNoZWFsdGgubmV0LmF1L3NtYXJ0L3JvbGUvbmV3IiwiaHR0cHM6Ly9sb2NhbGhvc3Q6MzAwMCIsImE1N2Q5MGUzLTVmNjktNGI5Mi1hYTJlLTI5OTIxODA4NjNjMSIsIiIsIiIsIiIsIiIsMCwxLCJbe1wicm9sZVwiOlwiaHR0cDovL25zLmVsZWN0cm9uaWNoZWFsdGgubmV0LmF1L3NtYXJ0L3JvbGUvbmV3XCIsXCJ0eXBlXCI6XCJRdWVzdGlvbm5haXJlXCIsXCJjYW5vbmljYWxcIjpcImh0dHA6Ly93d3cuaGVhbHRoLmdvdi5hdS9hc3Nlc3NtZW50cy9tYnMvNzE1fDAuMy4wLWFzc2VtYmxlZFwifV0iLCJodHRwczovL3Byb3h5LnNtYXJ0Zm9ybXMuaW8vdi9yNC9maGlyIixmYWxzZV0&jwks_tab=0&validation=1)
+4. This takes you to the settings page, where you can change the launch context. This has localhost:3000 as the default, which is where your application should be running. If it's not running here, change the Launch URL & Allowed Redirect URIs to wherever it is running.
+5. If you wish you can change the patient and the user for the launch context from this page, this is not a necessary step.
+6. Go to the top left (+ Icon) and then on this page Hit the 'Launch Starter SMART App' button.
+
 
 # Setup Identity Provider
 SMART on FHIR is secure and so this app will need to be able to fetch tokens from the same identity provider as your EMR.   
@@ -31,7 +27,7 @@ Not covered: Running with an identity provider other than Azure Activer Director
 
 ## Run the app
 1. Change client ID in index.js to the client ID generated in the above steps.
-2. ``` yarn start```
+2. ``` npm run dev```
 3. Follow [these steps](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/launching-a-smart-app-demystified/ba-p/2779729) to create a SMART Launcher from your EMR: 
 4. Click on the link
 
