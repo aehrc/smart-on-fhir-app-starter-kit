@@ -9,7 +9,7 @@ const smartLaunch = () => {
   FHIR.oauth2
     .init({
       clientId: 'a57d90e3-5f69-4b92-aa2e-2992180863c1',
-      scope: "launch openid fhirUser online_access patient/Patient.ru"
+      scope: "launch openid fhirUser online_access patient/*.*"
     })
     .then(client => {
       ReactDOM.createRoot(document.getElementById('root')).render(<App client={client} />);
